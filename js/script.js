@@ -1,3 +1,6 @@
+console.log ("Witam wzzystkich. Ten kod jest już wrepozytoriom Git.")
+
+
 let body = document.querySelector(".js-body");
 let button = document.querySelector(".js-themeButton");
 let themeName = document.querySelector(".js-themeName");
