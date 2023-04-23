@@ -1,0 +1,49 @@
+.section {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.section__header {
+    text-align: center;
+    margin: 20px 0px 5px;
+}
+
+.section__strong {
+    color: #dc143c;
+    margin-top: 30px;
+}
+
+.section__strong--dark {
+    text-shadow: 0px 1px 3px #eeea1c59;
+}
+
+.section__orderedList {
+    padding: 5px 20px 20px 25px;
+    background-color: #c0e1c669;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset -8px -7px 11px -9px #42445a;
+    margin: 2px 0px 20px;
+}
+
+.section__orderedItem {
+    margin: 10px 10px 0px;
+}
+
+.section__orderedItem:hover {
+    cursor: default;
+    background-color: #e9f0eae7;
+}
+
+.section--calc {
+    padding: 5px 20px 20px 25px;
+    background-color: #c0e1c669;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset -8px -7px 11px -9px #42445a;
+}
+
+@media (max-width: 580px) {
+    .section {
+        font-size: 12px;
+    }
+}

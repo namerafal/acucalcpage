@@ -1,0 +1,23 @@
+.topHeader {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 3px 10px #dced14;
+    padding: 10px 0 10px 0;
+    background-color: #69db6e;
+    border-radius: 50px 5px;
+    box-shadow: inset -8px -7px 11px -9px #42445a;
+    margin-top: 1px;
+}
+
+.topHeader--dark {
+    color: #00ffff;
+    text-shadow: none;
+    background-color: #171c16;
+    box-shadow: inset -8px -7px 14px -9px #4aad5f;
+}
+
+@media (max-width: 580px) {
+    .topHeader {
+        font-size: 15px;
+    }
+}

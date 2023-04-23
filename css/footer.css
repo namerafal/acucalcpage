@@ -1,0 +1,22 @@
+.footer {
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 1px 3px 10px #dced14;
+    padding: 10px 0 10px 0;
+    background-color: #8bf3909d;
+    border-radius: 50px 5px;
+    box-shadow: inset -8px -7px 11px -9px #42445a;
+    margin-bottom: 20px;
+}
+
+.footer_dark {
+    background-color: #000000;
+    color: #00ffff;
+    box-shadow: inset -8px -7px 14px -9px rgb(74 173 95);
+}
+
+@media (max-width: 580px) {
+    .footer {
+        font-size: 9px;
+    }
+}

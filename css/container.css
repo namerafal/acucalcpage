@@ -1,0 +1,13 @@
+.containerDiagram {
+    border-bottom: 2px solid #c0e1c669;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.containerDiagram__image {
+    width: 100%;
+}
+
+.containerOverflow {
+    overflow-x: auto;
+}
