@@ -1,20 +1,33 @@
-console.log ("Witam wzzystkich. Ten kod jest już wrepozytoriom Git.")
+{
+    const welcome = () => {
+        console.log("Witam wzzystkich. Ten kod jest już w repozytorium Git.")
+    };
 
+    const themeButton = document.querySelector(".js-themeButton");
 
-let body = document.querySelector(".js-body");
-let button = document.querySelector(".js-themeButton");
-let themeName = document.querySelector(".js-themeName");
-let header = document.querySelector(".js-topHeader");
-let nav = document.querySelector(".js-navigation");
-let strong = document.querySelector(".js-section__strong");
-let footer = document.querySelector(".footer");
+    const toggleTheme = () => {
+        const body = document.querySelector(".js-body");
+        const themeName = document.querySelector(".js-themeName");
+        const header = document.querySelector(".js-topHeader");
+        const nav = document.querySelector(".js-navigation");
+        const strong = document.querySelector(".js-section__strong");
+        const footer = document.querySelector(".footer");
 
-button.addEventListener("click", () => {
-    button.classList.toggle("themeButton--dark");
-    body.classList.toggle("body--dark");
-    header.classList.toggle("topHeader--dark");
-    strong.classList.toggle("section__strong--dark");
-    nav.classList.toggle("navigation--dark");
-    footer.classList.toggle("footer_dark");
-    themeName.innerText = body.classList.contains("body--dark") ? "jasny" : "ciemny";
-});
+        themeButton.classList.toggle("themeButton--dark");
+        body.classList.toggle("body--dark");
+        header.classList.toggle("topHeader--dark");
+        strong.classList.toggle("section__strong--dark");
+        nav.classList.toggle("navigation--dark");
+        footer.classList.toggle("footer_dark");
+        themeName.innerText = body.classList.contains("body--dark") ? "jasny" : "ciemny";
+    };
+
+    const init = () => {
+        themeButton.addEventListener("click", toggleTheme);
+
+        welcome();
+    };
+
+    init();
+
+};
