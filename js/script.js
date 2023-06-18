@@ -3,9 +3,7 @@
         console.log("Witam wzzystkich. Ten kod jest już w repozytorium Git.")
     };
 
-    const themeButton = document.querySelector(".js-themeButton");
-
-    const toggleTheme = () => {
+    const toggleTheme = (themeButton) => {
         const body = document.querySelector(".js-body");
         const themeName = document.querySelector(".js-themeName");
         const header = document.querySelector(".js-topHeader");
@@ -23,7 +21,8 @@
     };
 
     const init = () => {
-        themeButton.addEventListener("click", toggleTheme);
+        const themeButton = document.querySelector(".js-themeButton");
+        themeButton.addEventListener("click", () => toggleTheme(themeButton));
 
         welcome();
     };
